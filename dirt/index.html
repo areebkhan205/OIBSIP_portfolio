@@ -1,32 +1,76 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MY PORTPHOLIO WEBSITE</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MY PORTFOLIO WEBSITE</title>
+  
+  <!-- Tailwind CSS -->
+  <link href="style.css" rel="stylesheet" />
 
-  </head>
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
 
-  <body class="bg-[#0b0215]">
-    <!-- NAVBAR STARTED -->
-    <nav
-      class="w-full items-center px-10 h-16 bg-[#1A0B2E] md:p-7 flex justify-between"
-    >
-      <div class="ps-[49px]   text-xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
-  Areeb Khan
-</div >
-      <ul class="md:pe-[72px]  font-poppins text-white hidden md:flex  gap-12 cursor-pointer  whitespace-normal">
-        <li>Home</li>
-        <li>Work Experience</li>
-        <li>Project</li>
-        <li>contact us</li>
-      </ul>
-      <div class="md:hidden">
-        <a class="text-2xl bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent" href="#">&#8801;</a>
-      </div>
-    </nav>
-  </body>
+<body class="bg-[#0b0215] font-poppins">
+  <!-- NAVBAR STARTED -->
+  <nav class="w-full flex justify-between items-center px-10 h-16 bg-[#1A0B2E] md:p-7">
+    
+    <div class="ps-[49px] text-xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+      Areeb Khan
+    </div>
+    
+    <ul class="md:pe-[72px] hidden md:flex gap-12 cursor-pointer whitespace-normal text-white">
+      <li class="nav-item">Home</li>
+      <li class="nav-item">Work Experience</li>
+      <li class="nav-item">Project</li>
+      <li class="nav-item">Contact Us</li>
+    </ul>
+
+    <div class="md:hidden">
+      <a class="text-2xl bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent" href="#">&#8801;</a>
+    </div>
+  </nav>
+<!-- NAV BAR ENDS -->
+
+<!-- INTRO PAGE -->
+ <div class="min-h-screen  text-white flex items-center justify-center px-4">
+      <!-- Intro Line -->
+      <p class="text-lg  relative md:left-[104px] md:bottom-[159px] text-purple-300 mb-2">Hello! I am <span class="text-pink-400 font-medium">Areeb Khan</span></p>
+    <!-- content continer -->
+     <img src="asset/Arrow.png" alt="">
+    <div class="w-auto md:flex text-center flex-row flex-wrap  space-y-6">
+       <img src="./asset/Me.png" alt="Avatar" class=" md:w-[258ox] md:h-[259px] md:mx-auto rounded-full md:shadow-lg" />
+ <h1 class="text-2xl font-semibold">
+  <span class="text-purple-400">A Designer who</span><br />
+  <span class="text-3xl font-bold">Judges a book<br />by its <span class="line-through">cover</span> UI.</span>
+</h1>
+
+<p class="text-2xl hidden font-semibold position: relative md:block md:top-[264px] md:right-[796px]">
+      I’m a <span class="text-indigo-400">Software Engineer.</span>
+    </p>
+    <!-- Description -->
+    <p class="text-sm text-gray-400 relative md:top-[47px] md:right-[-70px] max-w-xl px-2">
+      A self-taught UI/UX designer,🚀 B.Tech CSE student passionate about turning ideas into interactive web products.
+Top 8 @ CODE ASTRAA | Web Dev Intern | Exploring AI, design & modern tech.
+    </p>
+</div>
+
+</div>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const navItems = document.querySelectorAll(".nav-item");
+      navItems.forEach(item => {
+        item.addEventListener("click", () => {
+          item.classList.add("scale-125", "transition-transform", "duration-200");
+          setTimeout(() => {
+            item.classList.remove("scale-125");
+          }, 200);
+        });
+      });
+    });
+  </script>
+</body>
 </html>
