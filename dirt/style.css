@@ -619,6 +619,21 @@ video {
   max-width: 36rem;
 }
 
+.rotate-\[238deg\] {
+  --tw-rotate: 238deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-\[145deg\] {
+  --tw-rotate: 145deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-\[32deg\] {
+  --tw-rotate: 32deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .scale-125 {
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
@@ -882,6 +897,34 @@ video {
 
   .md\:left-\[104px\] {
     left: 104px;
+  }
+
+  .md\:bottom-\[105px\] {
+    bottom: 105px;
+  }
+
+  .md\:left-\[70px\] {
+    left: 70px;
+  }
+
+  .md\:bottom-\[99px\] {
+    bottom: 99px;
+  }
+
+  .md\:bottom-\[74px\] {
+    bottom: 74px;
+  }
+
+  .md\:right-\[249px\] {
+    right: 249px;
+  }
+
+  .md\:bottom-\[113px\] {
+    bottom: 113px;
+  }
+
+  .md\:right-\[361px\] {
+    right: 361px;
   }
 
   .md\:mx-auto {
