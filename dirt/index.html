@@ -14,7 +14,7 @@
 
 <body class="bg-[#0b0215] font-poppins">
   <!-- NAVBAR STARTED -->
-  <nav class="w-full flex justify-between items-center px-10 h-16 bg-[#1A0B2E] md:p-7">
+  <nav class="w-full fixed flex justify-between items-center px-10 h-16 bg-[#1A0B2E] md:p-7">
     
     <div class="ps-[49px] text-xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
       Areeb Khan
@@ -28,28 +28,60 @@
     </ul>
 
     <div class="md:hidden">
-      <a class="text-2xl bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent" href="#">&#8801;</a>
+      <button onclick="toggleSidebar()" class="text-2xl bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent" href="#">&#8801;</button>
     </div>
   </nav>
 <!-- NAV BAR ENDS -->
+<!-- 
+toogle bar -->
+<div id="sidebar" 
+     class="fixed top-0 left-0 w-64 h-full bg-[#140425] text-white transform -translate-x-full transition-transform duration-300 z-50">
+  <div class="p-4 flex justify-between items-center">
+    <span class="font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">Areeb Khan</span>
+    <button onclick="toggleSidebar()">✖</button>
+  </div>
+  <ul class="mt-4 space-y-4 p-4">
+    <li><a href="#home" class="hover:text-purple-400">Home</a></li>
+    <li><a href="#about" class="hover:text-purple-400">About</a></li>
+    <li><a href="#projects" class="hover:text-purple-400">Projects</a></li>
+    <li><a href="#contact" class="hover:text-purple-400">Contact</a></li>
+  </ul>
+</div>
 
 <!-- INTRO PAGE -->
- <div class="min-h-screen  text-white flex items-center justify-center px-4">
+ <div class="min-h-screen  text-white flex flex-col md:flex-row items-center justify-center px-4">
       <!-- Intro Line -->
-      <p class="text-lg  relative md:left-[104px] md:bottom-[159px] text-purple-300 mb-2">Hello! I am <span class="text-pink-400 font-medium">Areeb Khan</span></p>
+      <p class="text-lg bottom-[-36px]  relative md:left-[104px] md:bottom-[159px] text-purple-300 mb-2">Hello! I am <span class="text-pink-400 font-medium">Areeb Khan</span></p>
     <!-- content continer -->
      <!-- arrow -->
-     <img class=" hidden rotate-[238deg] relative md:bottom-[105px] md:block md:left-[70px]" src="asset/Arrow.png" alt="aroow">
+     <img class="  rotate-[343deg] md:rotate-[238deg] relative md:bottom-[105px] md:left-[70px]" src="asset/Arrow.png" alt="aroow">
 
     <div class="w-auto md:flex text-center flex-row flex-wrap  space-y-6">
-       <img src="./asset/Me.png" alt="Avatar" class=" md:w-[258ox] md:h-[259px] md:mx-auto rounded-full md:shadow-lg" />
- <h1 class="text-2xl font-semibold relative md:bottom-[99px]">
-  <span class="text-purple-400">A Designer who</span><br />
-  <span class="text-3xl font-bold">Judges a book<br />by its <span class="line-through">cover</span> UI.</span>
-</h1>
+      <!-- image -->
+       <img src="./asset/Me.png" alt="Avatar" class=" h-[259px] w-[259px] md:w-[288x] md:h-[286px] md:mx-auto rounded-full md:shadow-lg" />
+ 
+       <div class=" relative md:bottom-[86px] text-white p-8">
+  <p class="text-base text-purple-400 mb-1">A Designer who</p>
+  <h1 class="text-2xl md:text-xl font-bold leading-snug">
+    Judges a book<br />
+    by its 
+    <span class="relative inline-block">
+      <span class="text-purple-400">cover</span>
+      <span 
+        class="absolute inset-0  border-white  rounded-full transform translate-y-2 scale-105">
+      </span>
+    </span>
+    ...
+  </h1>
+  <p class="text-xs mt-2 text-gray-300">
+    Because if the cover does not impress you what else can?
+  </p>
+</div>
+
 <!-- arrow2 -->
- <img class=" hidden rotate-[32deg] relative md:bottom-[113px] md:block md:right-[361px]" src="asset/Arrow.png" alt="aroow">
-<p class="text-2xl hidden font-semibold position: relative md:block md:top-[264px] md:right-[796px]">
+ <img class=" sm:hidden hidden rotate-[32deg] relative md:bottom-[113px] md:block md:right-[467px]" src="asset/Arrow.png" alt="aroow">
+ <div>
+<p class="text-2xl font-semibold">
       I’m a <span class="text-indigo-400">Software Engineer.</span>
     </p>
     <!-- Description -->
@@ -74,6 +106,10 @@ Top 8 @ CODE ASTRAA | Web Dev Intern | Exploring AI, design & modern tech.
         });
       });
     });
+    function toggleSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  sidebar.classList.toggle('-translate-x-full');
+}
   </script>
 </body>
 </html>
