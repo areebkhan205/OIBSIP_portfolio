@@ -13,7 +13,7 @@ This project showcases:
 - **HTML5** – semantic and accessible structure
 - **Tailwind CSS** – utility-first CSS framework for fast styling
 - **JavaScript** – dynamic interactions (animations, navbar toggles, etc.)
-- **Custom CSS** – for fine-tuned visual polish
+- **WEB3FORMS-API** – for SENDIND MAILS WITHOUT SQL AND ALL.
 
 ## 📌 Features
 ✅ Fully responsive design (mobile, tablet, desktop)  
