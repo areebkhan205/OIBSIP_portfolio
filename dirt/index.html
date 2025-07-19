@@ -292,43 +292,56 @@ toogle bar -->
 
  project end -->
 
+ <!-- I ALSO USES WEB 3 FORM API KEY TO HAVE MY EMAIL MESG -->
+
+
 <!-- // CONTACT US -->
 <section id="contact-form" class="p-[38px] md:p-[0px] relative bottom-[-59px] flex items-center flex-col w-full min-h-[78vh] bg-gradient-to-br from-black via-[#0e0a1f] to-[#1c0f36] px-4">
   <h1 class="text-4xl font-bold text-center mb-8 text-pink-400">Get in Touch</h1>
 
   <div class="w-full max-w-3xl relative top-[-22px] bg-[#10121b] rounded-lg p-8 shadow-lg">
-    <form class="space-y-6">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div>
-          <label class="block text-white font-medium mb-1">Name</label>
-          <input type="text" placeholder="Your name" class="w-full p-3 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-pink-500" />
-        </div>
-        <div>
-          <label class="block text-white font-medium mb-1">Email</label>
-          <input type="email" placeholder="your@email.com" class="w-full p-3 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-pink-500" />
-        </div>
-      </div>
+<form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+  <input type="hidden" name="access_key" value="4ddd6372-81c5-445d-90c3-35110dd6deed">
 
-      <div>
-        <label class="block text-white font-medium mb-1">Subject (Optional)</label>
-        <input type="text" placeholder="What's this about?" class="w-full p-3 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-pink-500" />
-      </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div>
+      <label class="block text-white font-medium mb-1">Name</label>
+      <input type="text" name="name" placeholder="Your name" required
+        class="w-full p-3 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-pink-500" />
+    </div>
+    <div>
+      <label class="block text-white font-medium mb-1">Email</label>
+      <input type="email" name="email" placeholder="your@email.com" required
+        class="w-full p-3 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-pink-500" />
+    </div>
+  </div>
 
-      <div>
-        <label class="block text-white font-medium mb-1">Message</label>
-        <textarea rows="5" placeholder="Your message here..." class="w-full p-3 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-pink-500"></textarea>
-      </div>
+  <div>
+    <label class="block text-white font-medium mb-1">Subject (Optional)</label>
+    <input type="text" name="subject" placeholder="What's this about?"
+      class="w-full p-3 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-pink-500" />
+  </div>
 
-      <div class="text-right">
-        <button type="submit" class="bg-gradient-to-r from-pink-500 to-purple-500 text-white px-6 py-3 rounded-full flex items-center gap-2 hover:scale-105 transition-all">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10l9 4 9-4-9-4-9 4z" />
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10l9 4 9-4M3 10l9 4v8" />
-          </svg>
-          Send Message
-        </button>
-      </div>
-    </form>
+  <div>
+    <label class="block text-white font-medium mb-1">Message</label>
+    <textarea name="message" rows="5" placeholder="Your message here..." required
+      class="w-full p-3 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-pink-500"></textarea>
+  </div>
+
+  <div class="text-right">
+    <button type="submit"
+      class="bg-gradient-to-r from-pink-500 to-purple-500 text-white px-6 py-3 rounded-full flex items-center gap-2 hover:scale-105 transition-all">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M3 10l9 4 9-4-9-4-9 4z" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M3 10l9 4 9-4M3 10l9 4v8" />
+      </svg>
+      Send Message
+    </button>
+  </div>
+</form>
+
   </div>
 </section>
 
