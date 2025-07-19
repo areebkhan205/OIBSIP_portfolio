@@ -29,10 +29,10 @@
       <ul
         class="md:pe-[72px] hidden md:flex gap-12 cursor-pointer whitespace-normal text-white"
       >
-        <li class="nav-item">Home</li>
-        <li class="nav-item">Work Experience</li>
+        <a href="#Home" class="text-white hover:text-purple-400"><li class="nav-item">Home</li></a>
+         <a href="#Work Experience" class="text-white hover:text-purple-400"><li class="nav-item">Work Experience</li></a>
         <li class="nav-item">Project</li>
-        <li class="nav-item">Contact Us</li>
+        <a href="#contact-form" class="text-white hover:text-purple-400"><li class="nav-item">Contact</li></a>
       </ul>
 
       <div class="md:hidden">
@@ -61,14 +61,14 @@ toogle bar -->
       </div>
       <ul class="mt-4 space-y-4 p-4">
         <li><a href="#home" class="hover:text-purple-400">Home</a></li>
-        <li><a href="#about" class="hover:text-purple-400">About</a></li>
+        <li><a href="#about" class="hover:text-purple-400">EXPERIENCE</a></li>
         <li><a href="#projects" class="hover:text-purple-400">Projects</a></li>
         <li><a href="#contact" class="hover:text-purple-400">Contact</a></li>
       </ul>
     </div>
 
     <!-- INTRO PAGE -->
-    <div
+    <div id="Home"
       class="min-h-[119vh] text-white flex flex-col md:flex-row items-center justify-center px-4"
     >
       <!-- Intro Line -->
@@ -134,21 +134,24 @@ toogle bar -->
       </div>
     </div>
     <!--sepration line -->
-    <div class="w-full h-px relative bottom-[179px] bg-purple-400 my-8"></div>
+    <div class="w-full h-px relative bottom-[0px] bg-purple-400 my-8"></div>
     <!-- INTRO PAGE DONE -->
 
     <!-- WORK EXPERIENCE PAGE STARTED -->
-    <section id="Project" class=" relative bottom-[120px] section-container px-4 md:px-8">
+    <section
+      id="Work Experience"
+      class="relative bottom-[-48px] section-container px-4 md:px-8"
+    >
       <h2
-        class="section-heading  gradient-text bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent text-2xl  mb-8 md:mb-16 text-center"
+        class="section-heading gradient-text bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent text-2xl mb-8 md:mb-16 text-center"
       >
         Professional Journey
       </h2>
-      <div class="relative min-h-[2000px]">
+      <div class="relative min-h-[1200px]">
         <!-- Desktop timeline line -->
         <div
           id="timeline-line"
-          class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-purple-500 to-pink-500 h-[70%]"
+          class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-purple-500 to-pink-500 h-[40%]"
           style="
             transform-origin: top;
             transform: scaleY(0);
@@ -170,7 +173,7 @@ toogle bar -->
         <div class="space-y-8 md:space-y-16 relative">
           <!-- First card -->
           <div
-            class="flex items-center w-full md:flex-row-reverse flex-col md:flex-row"
+            class="flex items-center w-full  flex-col md:flex-row"
           >
             <div
               class="absolute md:left-1/2 left-4 transform md:-translate-x-1/2 z-20"
@@ -180,7 +183,7 @@ toogle bar -->
               ></div>
             </div>
             <div
-              class="w-full md:w-[calc(50%-4rem)] pl-12 md:pl-0 md:mr-auto md:pl-16"
+              class="w-full md:w-[calc(50%-4rem)] pl-12  md:mr-auto md:pl-16"
             >
               <div
                 class="card space-y-3 shadow-2xl border-2 border-purple-900/30 hover:border-purple-500/50 transition-all duration-300 p-4 md:p-6"
@@ -222,25 +225,30 @@ toogle bar -->
               <div
                 class="card space-y-3 shadow-2xl border-2 border-purple-900/30 hover:border-purple-500/50 transition-all duration-300 p-4 md:p-6"
               >
-                <h3 class="text-2xl md:text-3xl font-bold  gradient-text bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+                <h3
+                  class="text-2xl md:text-3xl font-bold gradient-text bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent"
+                >
                   OASIS INFOBYTE
                 </h3>
-                <p class="text-lg md:text-xl text-purple-300">WEB DEVELOPER/DESIGNING Intern</p>
+                <p class="text-lg md:text-xl text-purple-300">
+                  WEB DEVELOPER/DESIGNING Intern
+                </p>
                 <p class="text-xs md:text-sm text-gray-400">
                   June 2025 – AUG 2025
                 </p>
                 <p class="text-sm md:text-base text-gray-300 mb-4">
-                  Worked on full-stack web projects, sharpening my skills in HTML, CSS, JavaScript, and responsive design.
-Designed clean, user-friendly interfaces and applied real-world development practices — boosting my technical confidence for future industry projects. 
+                  Worked on full-stack web projects, sharpening my skills in
+                  HTML, CSS, JavaScript, and responsive design. Designed clean,
+                  user-friendly interfaces and applied real-world development
+                  practices — boosting my technical confidence for future
+                  industry projects.
                 </p>
               </div>
             </div>
           </div>
 
           <!-- Third card -->
-          <div
-            class="flex items-center w-full md:flex-row-reverse flex-col md:flex-row"
-          >
+          <div class="flex items-center w-full md:flex-row-reverse flex-col">
             <div
               class="absolute md:left-1/2 left-4 transform md:-translate-x-1/2 z-20"
             >
@@ -249,23 +257,23 @@ Designed clean, user-friendly interfaces and applied real-world development prac
               ></div>
             </div>
             <div
-              class="w-full md:w-[calc(50%-4rem)] pl-12 md:pl-0 md:mr-auto md:pl-16"
+              class="w-full md:w-[calc(50%-4rem)] pl-12  md:mr-auto md:pl-16"
             >
               <div
                 class="card space-y-3 shadow-2xl border-2 border-purple-900/30 hover:border-purple-500/50 transition-all duration-300 p-4 md:p-6"
               >
-                <h3 class="text-2xl md:text-3xl font-bold gradient-text bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+                <h3
+                  class="text-2xl md:text-3xl font-bold gradient-text bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent"
+                >
                   GALGOTIAS(G-POST)
                 </h3>
-                <p class="text-lg md:text-xl text-purple-300">
-                  SENIOR MEMBER
-                </p>
+                <p class="text-lg md:text-xl text-purple-300">SENIOR MEMBER</p>
                 <p class="text-xs md:text-sm text-gray-400">
                   AUG 2023 – Jan 2025
                 </p>
                 <p class="text-sm md:text-base text-gray-300 mb-4">
-                  MAGZINE SOCIETRY WHERE I DESIGN MAGZINES AND TAKE A 
-                  LOTS OF INTERVIEWS...
+                  MAGZINE SOCIETRY WHERE I DESIGN MAGZINES AND TAKE A LOTS OF
+                  INTERVIEWS...
                 </p>
               </div>
             </div>
@@ -273,7 +281,192 @@ Designed clean, user-friendly interfaces and applied real-world development prac
         </div>
       </div>
     </section>
+<!-- work Experience finished -->
+<!-- --seprationline -->
+ <div class="w-full h-px relative bottom-[-87px] bg-purple-400 my-8"></div>
 
+ <!-- project STARTED
+  
+
+                YET TO ADD WILL ADD IT SONNER 
+
+ project end -->
+
+<!-- // CONTACT US -->
+<section id="contact-form" class="p-[38px] md:p-[0px] relative bottom-[-59px] flex items-center flex-col w-full min-h-[78vh] bg-gradient-to-br from-black via-[#0e0a1f] to-[#1c0f36] px-4">
+  <h1 class="text-4xl font-bold text-center mb-8 text-pink-400">Get in Touch</h1>
+
+  <div class="w-full max-w-3xl relative top-[-22px] bg-[#10121b] rounded-lg p-8 shadow-lg">
+    <form class="space-y-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label class="block text-white font-medium mb-1">Name</label>
+          <input type="text" placeholder="Your name" class="w-full p-3 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-pink-500" />
+        </div>
+        <div>
+          <label class="block text-white font-medium mb-1">Email</label>
+          <input type="email" placeholder="your@email.com" class="w-full p-3 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-pink-500" />
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-white font-medium mb-1">Subject (Optional)</label>
+        <input type="text" placeholder="What's this about?" class="w-full p-3 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-pink-500" />
+      </div>
+
+      <div>
+        <label class="block text-white font-medium mb-1">Message</label>
+        <textarea rows="5" placeholder="Your message here..." class="w-full p-3 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-pink-500"></textarea>
+      </div>
+
+      <div class="text-right">
+        <button type="submit" class="bg-gradient-to-r from-pink-500 to-purple-500 text-white px-6 py-3 rounded-full flex items-center gap-2 hover:scale-105 transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10l9 4 9-4-9-4-9 4z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10l9 4 9-4M3 10l9 4v8" />
+          </svg>
+          Send Message
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- //footer stared bhai -->
+
+    <footer id="contact" class="relative">
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-transparent to-purple-900/20"
+      ></div>
+      <div
+        class="relative border-t border-gray-800/50 backdrop-blur-sm bg-black/50"
+      >
+        <div class="container mx-auto px-4 py-12">
+          <div class="flex flex-col items-center justify-center space-y-8 mb-8">
+            <div class="flex justify-center space-x-8">
+              <a
+                href="https://github.com/areebkhan205"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="group relative p-3 hover:scale-110 transition-transform bg-gray-900/50 rounded-lg border border-gray-800/50"
+              >
+                <img
+                  src="./asset/github (1).png"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-linkedin w-6 h-6"
+                />
+                <div
+                  class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white px-3 py-1 rounded-lg text-sm whitespace-nowrap opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"
+                >
+                  Github
+                </div>
+              </a>
+
+              <!-- //LINKDLN -->
+              <a
+                href="https://www.linkedin.com/in/areeb-khan-533754317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="group relative p-3 hover:scale-110 transition-transform bg-gray-900/50 rounded-lg border border-gray-800/50"
+                style="opacity: 1; transform: none"
+              >
+                <img
+                  src="./asset/linkedin (2).png"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-linkedin w-6 h-6"
+                />
+                <div
+                  class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white px-3 py-1 rounded-lg text-sm whitespace-nowrap opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"
+                >
+                  Linkdln
+                </div>
+              </a>
+
+              <a
+                href="mailto:areeb.2854.com@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="group relative b-[10px] p-3 hover:scale-110 bg-gray-900/50 rounded-lg border border-gray-800/50 opacity-1 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"
+              >
+                <img
+                  src="./asset/mail-svgrepo-com.svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-mail w-6 h-6"
+                />
+                <div
+                  class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white px-3 py-1 rounded-lg text-sm whitespace-nowrap opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"
+                >
+                  Email
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="text-center space-y-2"
+            style="opacity: 1; transform: none"
+          >
+            <div
+              class="flex items-center justify-center space-x-2 text-sm text-gray-400"
+            >
+              <span>Made with</span>
+              <div style="transform: scale(1.08475) rotate(6.01541deg)">
+                <img
+                  src="./asset/thunder-svgrepo-com.svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-heart w-4 h-4 text-red-500 inline"
+                />
+              </div>
+              <span>by Areeb khan</span>
+            </div>
+            <p class="text-sm text-gray-500">
+              © 2025<br />
+              All rights reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- // footer completeeddd -->
     <!-- ✅ JavaScript  -->
     <script>
       document.addEventListener("DOMContentLoaded", () => {
@@ -314,21 +507,25 @@ Designed clean, user-friendly interfaces and applied real-world development prac
         if (timelineLineMobile) observerMobile.observe(timelineLineMobile);
       });
 
-        document.addEventListener("DOMContentLoaded", () => {
-      const navItems = document.querySelectorAll(".nav-item");
-      navItems.forEach(item => {
-        item.addEventListener("click", () => {
-          item.classList.add("scale-125", "transition-transform", "duration-200");
-          setTimeout(() => {
-            item.classList.remove("scale-125");
-          }, 200);
+      document.addEventListener("DOMContentLoaded", () => {
+        const navItems = document.querySelectorAll(".nav-item");
+        navItems.forEach((item) => {
+          item.addEventListener("click", () => {
+            item.classList.add(
+              "scale-125",
+              "transition-transform",
+              "duration-200"
+            );
+            setTimeout(() => {
+              item.classList.remove("scale-125");
+            }, 200);
+          });
         });
       });
-    });
-    function toggleSidebar() {
-  const sidebar = document.getElementById('sidebar');
-  sidebar.classList.toggle('-translate-x-full');
-}
+      function toggleSidebar() {
+        const sidebar = document.getElementById("sidebar");
+        sidebar.classList.toggle("-translate-x-full");
+      }
     </script>
   </body>
 </html>
