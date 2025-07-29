@@ -14,7 +14,57 @@
       rel="stylesheet"
     />
   </head>
+<style>
+#scroll {
+  animation: scrolling-effect 1s linear forwards;
+  animation-timeline: view() ;
+  animation-range:entry 0%;
+}
 
+@keyframes scrolling-effect {
+  from {
+    opacity: 0.4;
+    transform: scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#pop-up {
+  opacity: 0.7;
+  transform: scale(1.2);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+#pop-up:hover{
+  opacity: 1;
+  transform: scale(1.5);
+}
+
+
+
+#pop-up-card {
+  opacity: 0.7;
+  transform: scale(0.6);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+#pop-up-card:hover{
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+#pop-up-card-right {
+  opacity: 0.7;
+  transform: scale(0.6);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+#pop-up-card-right:hover{
+  opacity: 1;
+  transform: scale(1);
+}
+
+</style>
   <body class="bg-[#0b0215] font-poppins">
     <!-- NAVBAR STARTED -->
     <nav
@@ -26,18 +76,18 @@
         Areeb Khan
       </div>
 
-      <ul
+      <ul 
         class="md:pe-[72px] hidden md:flex gap-12 cursor-pointer whitespace-normal text-white"
       >
         <a href="#Home" class="text-white hover:text-purple-400"
-          ><li class="nav-item">Home</li></a
+          ><li id="pop-up" class="nav-item">Home</li></a
         >
         <a href="#Work Experience" class="text-white hover:text-purple-400"
-          ><li class="nav-item">Work Experience</li></a
+          ><li id="pop-up"  class="nav-item">Work Experience</li></a
         >
-        <li class="nav-item">Project</li>
+        <li id="pop-up"  class="nav-item">Project</li>
         <a href="#contact-form" class="text-white hover:text-purple-400"
-          ><li class="nav-item">Contact</li></a
+          ><li id="pop-up"  class="nav-item">Contact</li></a
         >
       </ul>
 
@@ -65,7 +115,7 @@ toogle bar -->
         >
         <button onclick="toggleSidebar()">✖</button>
       </div>
-      <ul class="mt-4 space-y-4 p-4">
+      <ul  class="mt-4 space-y-4 p-4  hover:text-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
         <li><a href="#home" class="hover:text-purple-400">Home</a></li>
         <li><a href="#about" class="hover:text-purple-400">EXPERIENCE</a></li>
         <li><a href="#projects" class="hover:text-purple-400">Projects</a></li>
@@ -147,14 +197,14 @@ toogle bar -->
     <!-- WORK EXPERIENCE PAGE STARTED -->
     <section
       id="Work Experience"
-      class="relative bottom-[-48px] section-container px-4 md:px-8"
+      class="relative bottom-[8px] section-container px-4 md:px-8"
     >
       <h2
-        class="section-heading gradient-text bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent text-2xl mb-8 md:mb-16 text-center"
+        class="section-heading gradient-text bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent text-2xl mb-[1rem] md:mb-[-3rem] text-center"
       >
         Professional Journey
       </h2>
-      <div class="relative min-h-[800px]">
+      <div id="scroll" class="relative min-h-[800px]">
         <!-- Desktop timeline line -->
         <div
           id="timeline-line"
@@ -179,7 +229,7 @@ toogle bar -->
 
         <div class="space-y-8 md:space-y-16 relative">
           <!-- First card -->
-          <div class="flex items-center w-full flex-col md:flex-row">
+          <div id="pop-up-card" class="flex items-center w-full flex-col md:flex-row">
             <div
               class="absolute md:left-1/2 left-4 transform md:-translate-x-1/2 z-20"
             >
@@ -214,7 +264,7 @@ toogle bar -->
           </div>
 
           <!-- Second card -->
-          <div class="flex items-center w-full flex-col md:flex-row">
+          <div id="pop-up-card-right" class="flex items-center w-full flex-col md:flex-row">
             <div
               class="absolute md:left-1/2 left-4 transform md:-translate-x-1/2 z-20"
             >
@@ -222,7 +272,7 @@ toogle bar -->
                 class="w-4 h-4 md:w-6 md:h-6 bg-purple-500 rounded-full shadow-[0_0_20px_rgba(168,85,247,0.6)] animate-pulse"
               ></div>
             </div>
-            <div
+            <div 
               class="w-full md:w-[calc(50%-4rem)] pl-12 md:pl-0 md:ml-auto md:pr-16"
             >
               <div
@@ -251,7 +301,7 @@ toogle bar -->
           </div>
 
           <!-- Third card -->
-          <div class="flex items-center w-full md:flex-row-reverse flex-col">
+          <div id="pop-up-card-right" class="flex items-center w-full md:flex-row-reverse flex-col">
             <div
               class="absolute md:left-1/2 left-4 transform md:-translate-x-1/2 z-20"
             >
@@ -268,13 +318,18 @@ toogle bar -->
                 >
                   GALGOTIAS
                 </h3>
-                <p class="text-lg md:text-xl text-purple-300">SENIOR MEMBER G-Post Magazine Society</p>
+                <p class="text-lg md:text-xl text-purple-300">
+                  SENIOR MEMBER G-Post Magazine Society
+                </p>
                 <p class="text-xs md:text-sm text-gray-400">
                   AUG 2023 – Jan 2025
                 </p>
                 <p class="text-sm md:text-base text-gray-300 mb-4">
-                  Created event reports and designs; mentored juniors; led on-field coverage.
-
+                  We’re the college’s magazine and reporting club where
+                  creativity meets curiosity. From interviews and reports to
+                  designing vibrant magazines, we capture campus life and share
+                  stories that connect, inform, and inspire. Join us and help
+                  turn everyday moments into memories on paper.
                 </p>
               </div>
             </div>
@@ -300,7 +355,9 @@ toogle bar -->
       id="contact-form"
       class="p-[38px] md:p-[0px] relative bottom-[-19px] flex items-center flex-col w-full min-h-[103vh] md:min-h-[106vh] bg-gradient-to-br from-black via-[#0e0a1f] to-[#1c0f36] px-4"
     >
-      <h1 class="text-4xl font-bold text-center mb-8  bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+      <h1
+        class="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent"
+      >
         Get in Touch
       </h1>
 
